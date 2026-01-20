@@ -25,7 +25,9 @@ function App() {
   },[length, numAllowed, charAllowed, setPass]);
 
   const copyPassToClip =useCallback(()=>{
-
+    passRef.current?.select();
+    window.navigator.clipboard.writeText(pass);
+    
   },[pass])
 
   useEffect(()=>{
@@ -37,8 +39,8 @@ function App() {
     <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800' > 
     <h1 className="text-white text-center my-3"> Password Generator</h1>
       <div className='flex shadow rounded-lg overflow-hidden mb-4'>
-        <input type="text" value={pass} className="outline-none w-full py-1 px-3 bg-white text-gray-800" readOnly placeholder="Password"></input>
-        <button onClick={copyPassToClip} className="bg-blue-500 hover:bg-orange-600 text-white font-bold py-1 px-4" ref={passRef} >copy</button>
+        <input type="text" value={pass} className="outline-none w-full py-1 px-3 bg-white text-gray-800" readOnly placeholder="Password" ref = {passRef}></input>
+        <button onClick={copyPassToClip} className="bg-blue-500 hover:bg-orange-600 text-white font-bold py-1 px-4" >copy</button>
       </div>
       <div>
         <div>
