@@ -1,0 +1,28 @@
+13-12-25 / mohit decodes
+1)What is pure function in js
+2)What is side effect of js
+3)What's the difference between shallow copy and dip copy
+4) what is generator function
+5) what is optional chaining
+6)what is nullish collision
+7)what is hoisting and how it is used
+8)what is call , apply and bind ,what is format to call these 3
+9)how event queue works
+10)what is proxy in js
+11)what is node js
+
+
+https://claude.ai/share/6936e1a4-a1be-44ac-bc00-d9f06423297c  
+
+
+11) what's difference between virtual dom and fibre dom
+12) explain react suspense
+13)lazy loading in react
+14)uselayout effect and use effect difference 
+15) why does react need keys in array list
+16)what is props drilling 
+
+
+
+
+
